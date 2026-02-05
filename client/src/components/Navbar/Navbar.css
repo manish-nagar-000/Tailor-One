@@ -1,0 +1,191 @@
+.navbar {
+  background-color: #fff; /* white background */
+  color: #333; /* light black text */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 14px; /* height thodi choti */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-size: 0.9rem; /* text size chhota */
+}
+
+/* 🔹 LOGO SECTION */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* thoda chhota gap for T + One */
+}
+
+/* 🔹 Modern bright "T" logo */
+.logo .logo-icon {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ff6f61; /* Bright modern color */
+  text-shadow: 0 0 6px #ff6f61, 0 0 12px #ff6f61, 0 0 18px #ff6f61;
+  cursor: pointer;
+  transition: transform 0.2s, text-shadow 0.2s;
+}
+
+.logo .logo-icon:hover {
+  transform: scale(1.2) rotate(-5deg);
+  text-shadow: 0 0 10px #ff8a80, 0 0 20px #ff8a80, 0 0 30px #ff8a80;
+}
+
+/* Logo text next to T */
+.logo .nav-link {
+  color: #333;
+  font-size: 1rem; /* chhota text */
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+/* 🔹 Services + Subscription beside T-One (only on mobile) */
+.nav-small-links {
+  display: none;
+  align-items: center;
+  gap: 6px;
+}
+
+.small-link {
+  color: #333;
+  font-size: 0.8rem; /* chhota text */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.small-link:hover {
+  color: #007bff; /* hover highlight */
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 1.3rem; /* thoda chhota */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 14px; /* gap thoda chota */
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 0.85rem; /* chhota text */
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.login-btn {
+  background: #f0f0f0; /* light grey */
+  color: #333;
+  padding: 4px 10px; /* chhota button */
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #e0e0e0;
+}
+
+.logout {
+  margin-left: 8px;
+  cursor: pointer;
+  color: #555;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 50px; /* thoda chhota height */
+    left: -100%;
+    background-color: #fff;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .logo .nav-link {
+    font-size: 0.95rem;
+  }
+
+  /* ✅ Show beside T-One in mobile */
+  .nav-small-links {
+    display: flex;
+  }
+
+  .small-link {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+
+
+.logo-image {
+  width: 37px;          /* text size ke barabar */
+  height: 37px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+  vertical-align: middle;
+  border: 2px solid #000;   /* 🔥 Black sharp border */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.35); /* subtle black glow */
+  transition: 0.28s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75); /* stronger black glow */
+}
+
+
+
+
+
+
+/* Desktop Slim & Centered */
+.navbar-wrapper {
+  max-width: 1100px;   /* 🔥 Navbar width reduced */
+  margin: 0 auto;
+  width: 100%;
+  nav-right: 10px;
+}
+
+/* Want even smaller look? Just tell me — I’ll tune:
+   900px → compact
+   820px → premium slim
+   720px → ultra slim modern  */
+

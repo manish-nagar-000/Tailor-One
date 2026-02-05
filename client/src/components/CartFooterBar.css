@@ -1,0 +1,42 @@
+.cart-footer-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+
+  /* 🔹 Animated background */
+  background-color: green;
+  animation: rainbowBG 20s linear infinite;
+}
+
+.cart-footer-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cart-footer-right {
+  font-weight: 600;
+}
+
+/* 🔹 Keyframes for smooth multi-color change */
+@keyframes rainbowBG {
+  0%   { background-color: green; }
+  12%  { background-color: yellow; }
+  25%  { background-color: blue; }
+  37%  { background-color: red; }
+  50%  { background-color: black; }
+  62%  { background-color: pink; }
+  75%  { background-color: orange; }
+  87%  { background-color: purple; }
+  100% { background-color: chocolate; }
+}

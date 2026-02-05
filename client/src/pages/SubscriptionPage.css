@@ -1,0 +1,191 @@
+/* ================= PAGE WRAPPER ================= */
+.subscription-wrapper {
+  padding: 20px;
+  margin-bottom: 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscription-wrapper h1 {
+  text-align: center;
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* ================= SUBSCRIPTION GRID ================= */
+.subscriptions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* ================= SUBSCRIPTION CARD ================= */
+.subscription-card {
+  background: linear-gradient(145deg, #f9fbff, #edf3ff);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1.8px solid #dce6ff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: 0.35s;
+  overflow: hidden;
+}
+
+.subscription-card:hover {
+  transform: translateY(-7px) scale(1.03);
+  background: linear-gradient(145deg, #e8f2ff, #dae8ff);
+  border-color: #4a90e2;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12), 0 0 20px rgba(74, 144, 226, 0.35);
+}
+
+/* ================= SUBSCRIPTION TITLE ================= */
+.subscription-card h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0.5rem 0;
+  background: linear-gradient(90deg, #4a90e2, #ff4d6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================= DESCRIPTION / DETAILS ================= */
+.subscription-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.45;
+  margin: 5px 0;
+}
+
+.subscription-card ul {
+  padding-left: 18px;
+  margin: 8px 0;
+  color: #6c757d;
+  text-align: left;
+}
+
+.subscription-card ul li {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+/* ================= PRICE ================= */
+.subscription-card .price {
+  font-size: 1.1rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff4d6d, #4a90e2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  margin-top: 6px;
+}
+
+/* ================= ADD / REMOVE BUTTONS ================= */
+.subscription-card .add-btn,
+.subscription-card .remove-btn {
+  margin-top: 12px;
+  width: 140px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+  color: #fff;
+  background: linear-gradient(135deg, #4a90e2, #ff4d6d);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.subscription-card .add-btn:hover,
+.subscription-card .remove-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 9px 20px rgba(0, 0, 0, 0.22);
+}
+
+.subscription-card .remove-btn {
+  background: linear-gradient(135deg, #dc3545, #ff6b6b);
+}
+
+.subscription-card .remove-btn:hover {
+  background: linear-gradient(135deg, #c82333, #ff4d4d);
+}
+
+/* ================= ACTIVE SUBSCRIPTION BOX ================= */
+.active-subscription {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #e6f4ea;
+  color: #28a745;
+  font-weight: 800;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 1024px) {
+  .subscriptions-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscriptions-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .subscription-card {
+    padding: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .subscriptions-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .subscription-card {
+    padding: 15px;
+    border-radius: 16px;
+  }
+  .subscription-card h3 {
+    font-size: 1.2rem;
+  }
+  .subscription-card p,
+  .subscription-card ul li {
+    font-size: 0.88rem;
+  }
+  .subscription-card .add-btn,
+  .subscription-card .remove-btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Mobile button center + thin border */
+@media (max-width: 768px) {
+  .subscription-card {
+    text-align: center !important;
+  }
+
+  .subscription-card button {
+    margin: 0 auto !important;
+    display: block !important;
+    width: fit-content !important;
+    border-width: 1px !important;   /* 🔥 border chhota */
+    padding: 6px 14px !important;   /* button compact */
+    border-radius: 6px !important;  /* smooth shape */
+  }
+}

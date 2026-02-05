@@ -1,0 +1,68 @@
+/* Form buttons */
+.btn-red {
+  background-color: #ef4444; /* Red-500 */
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn-red:hover {
+  background-color: #dc2626; /* Red-600 */
+  transform: scale(1.05);
+}
+
+.btn-yellow {
+  background-color: #facc15; /* Yellow-500 */
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn-yellow:hover {
+  background-color: #eab308; /* Yellow-600 */
+  transform: scale(1.05);
+}
+
+/* Offers table */
+.offers-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.offers-table th,
+.offers-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+.offers-table thead {
+  background: linear-gradient(to right, #dc2626, #facc15); /* red → yellow */
+  color: white;
+}
+
+.offers-table tbody tr:hover {
+  background-color: #fde68a20; /* subtle hover */
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+input, textarea {
+  border: 2px solid #ccc;
+  outline: none;
+}
