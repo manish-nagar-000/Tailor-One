@@ -1,17 +1,24 @@
 # 1. Clone the repository
 git clone https://github.com/manish-nagar-000/Tailor-One.git
+
+
 cd Tailor-One
 
 # 2. Run Frontend (React)
 cd client
+
 npm install
+
 npm run dev
 # Frontend will run on http://localhost:5173
 
 # 3. Run Backend (Node + Express)
 cd ..
+
 cd server
+
 npm install
+
 npm start
 # Backend will run on http://localhost:4000
 
@@ -109,4 +116,5 @@ npm start
 cd client
 npm install
 npm run dev
+
 
